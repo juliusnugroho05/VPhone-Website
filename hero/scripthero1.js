@@ -2,12 +2,17 @@
 const toggle = document.getElementById("menuToggle");
 const nav = document.getElementById("navMenu");
 
-// Tambahkan Pengecekan IF ini ya!
 if (toggle && nav) {
   toggle.addEventListener("click", () => {
     nav.classList.toggle("active");
-    // Simple hamburger animation
     toggle.classList.toggle("open");
+  });
+
+  document.querySelectorAll("#navMenu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      nav.classList.remove("active");
+      toggle.classList.remove("open");
+    });
   });
 }
 
@@ -15,7 +20,7 @@ if (toggle && nav) {
 const revealElements = document.querySelectorAll(".reveal");
 
 const revealOptions = {
-  threshold: 0.15, // Trigger when 15% of the element is visible
+  threshold: 0.15,
   rootMargin: "0px 0px -50px 0px",
 };
 
@@ -48,7 +53,6 @@ bentoModals.forEach((item) => {
   const modal = document.getElementById(item.modalId);
   const closeBtn = document.getElementById(item.closeId);
 
-  // Pastikan elemennya ada di HTML sebelum pasang event listener
   if (btn && modal && closeBtn) {
     // Buka Modal
     btn.addEventListener("click", () => {
@@ -84,9 +88,8 @@ document.querySelectorAll(".color-dot").forEach((dot) => {
     this.classList.add("active");
   });
 });
-// =========================================
+
 // FAKE BACKEND LOGIC (LocalStorage)
-// =========================================
 
 // 1. LOGIC PENDAFTARAN (REGISTER)
 const registerForm = document.getElementById("registerForm");
@@ -108,11 +111,11 @@ if (registerForm) {
       return;
     }
 
-    // SIMPAN KE LOCALSTORAGE (Database Bohongan)
+    // SIMPAN KE LOCALSTORAGE
     const userData = {
       firstName: firstName,
       email: email,
-      password: password, // Catatan: Di dunia nyata, password tidak boleh disimpan polos begini ya!
+      password: password,
     };
 
     localStorage.setItem("vphone_user", JSON.stringify(userData));
@@ -160,13 +163,13 @@ function updateNavbar() {
   const savedData = JSON.parse(localStorage.getItem("vphone_user"));
 
   const navMenu = document.getElementById("navMenu");
-  const userGreeting = document.getElementById("userGreeting"); // Elemen ruang kosong tadi
+  const userGreeting = document.getElementById("userGreeting");
 
   if (isLoggedIn === "true" && savedData) {
     // 1. Munculkan sapaan di sebelah Logo VPhone
     if (userGreeting) {
-      userGreeting.innerHTML = `Hi, <span style="color: var(--accent); font-weight: 600;">${savedData.firstName}</span> ✨`;
-      userGreeting.style.display = "block"; // Tampilkan elemennya
+      userGreeting.innerHTML = `Hi, <span style="color: var(--accent); font-weight: 600;">${savedData.firstName}</span>`;
+      userGreeting.style.display = "block";
     }
 
     // 2. Ubah link Login/Register di sebelah kanan menjadi Logout
@@ -179,20 +182,19 @@ function updateNavbar() {
       if (authLink) {
         authLink.innerText = "Logout";
         authLink.href = "#";
-        authLink.style.color = "#ff453a"; // Kasih warna merah ala Apple untuk opsi keluar
-        authLink.style.borderColor = "#ff453a"; // Kalau dia berbentuk tombol
+        authLink.style.color = "#ff453a";
+        authLink.style.borderColor = "#ff453a";
 
         // Fungsi saat ditekan: Hapus sesi dan muat ulang halaman
         authLink.onclick = (e) => {
           e.preventDefault();
-          localStorage.removeItem("isLoggedIn"); // Hapus status login
-          window.location.reload(); // Refresh halaman (Sapaan akan hilang otomatis)
+          localStorage.removeItem("isLoggedIn");
+          window.location.reload();
         };
       }
     }
   }
 }
-
 // Jalankan cek navbar setiap halaman dimuat
 updateNavbar();
 
