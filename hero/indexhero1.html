@@ -1,0 +1,701 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VPhone | Portofolio</title>
+    <link rel="stylesheet" href="../hero/stylehero1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">VPhone.</div>
+      <nav id="navMenu">
+        <a href="../hero/indexhero1.html">Home</a>
+        <a href="../products/indexproducts.html">Products</a>
+        <a href="../about/indexabout.html">About</a>
+        <a href="../login/login.html" class="nav-btn">Buy Now</a>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1 class="fade-in">Pro beyond limits.</h1>
+        <p class="fade-in delay-1">
+          Discover the ultimate smartphone experience with unprecedented power,
+          stunning camera capabilities, and all-day battery life.
+        </p>
+        <div class="hero-actions fade-in delay-2">
+          <a href="#products" class="btn primary">Shop Now</a>
+          <a href="#features" class="btn secondary">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image fade-in delay-3">
+        <div class="floating-badge badge-left">
+          <span class="icon">⚡</span>
+          <div>
+            <h4>A17 Pro</h4>
+            <p>Super fast</p>
+          </div>
+        </div>
+
+        <img
+          src="https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=800&q=80"
+          alt="Premium VPhone"
+          class="floating-phone"
+        />
+
+        <div class="floating-badge badge-right">
+          <span class="icon">📸</span>
+          <div>
+            <h4>48MP</h4>
+            <p>Pro Camera</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="bento-section">
+      <div class="section-header reveal">
+        <h2>Kenali VPhone lebih dalam.</h2>
+      </div>
+
+      <!-- Container untuk horizontal scroll -->
+      <div class="bento-scroll-wrapper reveal delay-1">
+        <div class="bento-track">
+          <!-- Card 1: Kamera -->
+          <div class="bento-card">
+            <div class="bento-text">
+              <span>Kamera Canggih</span>
+              <h3>Ambil foto seindah bayangan Anda.</h3>
+            </div>
+            <button class="plus-btn" id="btn-camera">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <img src="../img/camera_image.png" alt="Kamera" />
+          </div>
+
+          <!-- Card 2: Performa / Chip -->
+          <div class="bento-card dark-card">
+            <div class="bento-text">
+              <span>Chip X1</span>
+              <h3>Kecepatan yang bertahan lama.</h3>
+            </div>
+            <!-- Menggunakan icon/gambar chip transparan -->
+            <button class="plus-btn" id="btn-chip">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              >
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <img
+              src="../img/chip_image.png"
+              alt="Chipset"
+              style="height: 50%; object-fit: contain; padding-bottom: 20px"
+            />
+          </div>
+
+          <!-- Card 3: Layar / UI -->
+          <div class="bento-card">
+            <div class="bento-text">
+              <span>OS Cerdas</span>
+              <h3>Tampilan baru. Lebih banyak keajaiban.</h3>
+            </div>
+            <button class="plus-btn" id="btn-os">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              >
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <img
+              src="https://images.unsplash.com/photo-1512054502232-10a0a035d672?auto=format&fit=crop&w=600&q=80"
+              alt="Layar HP"
+            />
+          </div>
+
+          <!-- Card 4: Baterai -->
+          <div class="bento-card dark-card">
+            <div class="bento-text">
+              <span>Baterai Awet</span>
+              <h3>Daya sepanjang hari untuk semua aktivitas.</h3>
+            </div>
+            <button class="plus-btn" id="btn-battery">
+              <svg
+                viewBox="0 0 24 24"
+                width="20"
+                height="20"
+                stroke="currentColor"
+                stroke-width="2"
+                fill="none"
+              >
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+            </button>
+            <img
+              src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=600&q=80"
+              alt="Baterai"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MODAL OVERLAY UNTUK KAMERA -->
+    <div id="modal-camera" class="modal-overlay">
+      <div class="modal-content">
+        <!-- Tombol Close (X) -->
+        <button class="close-btn" id="close-camera">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-body">
+          <span class="modal-subtitle">Kamera Canggih</span>
+          <h2 class="modal-title">
+            Ambil foto dan video<br />seindah bayangan Anda.
+          </h2>
+
+          <!-- Bagian 1: Teks Kiri, HP Selfie Kanan -->
+          <div class="modal-split">
+            <div class="modal-text-block">
+              <h3>Hasil indah lebih mudah.</h3>
+              <p>
+                Kamera canggih di VPhone otomatis mengambil foto yang fenomenal
+                dengan detail dan warna yang luar biasa. Dan dengan kamera depan
+                Center Stage, Anda mendapatkan berbagai cara yang lebih
+                fleksibel untuk mengatur komposisi selfie dan banyak lagi.
+              </p>
+            </div>
+            <div class="modal-img-wrapper">
+              <!-- Mockup HP berisi gambar -->
+              <div class="mockup-phone vertical">
+                <img
+                  src="https://images.unsplash.com/photo-1574607383476-f517f260d30b?auto=format&fit=crop&w=500&q=80"
+                  alt="Selfie"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Bagian 2: Teks Lebar & Grid 3 Foto -->
+          <div class="modal-full">
+            <p class="large-desc">
+              <strong>Zoom lagi dan lagi.</strong> Kecanggihan sistem kamera
+              VPhone menghadirkan berbagai jarak fokus dengan fleksibilitas
+              framing yang luar biasa — mulai dari tampilan close-up yang tajam
+              hingga jepretan yang lebar. Dapatkan tampilan lebih dekat dengan
+              8x zoom kualitas optik.
+            </p>
+
+            <div class="photo-grid-3">
+              <img
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
+                alt="Zoom 1"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80"
+                alt="Zoom 2"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1601004890684-d8cbf643f5f2?auto=format&fit=crop&w=500&q=80"
+                alt="Zoom 3"
+              />
+            </div>
+          </div>
+
+          <!-- Bagian 3: Teks Lebar & Video Lanskap -->
+          <div class="modal-full">
+            <p class="large-desc">
+              <strong>Bikin video seperti di film-film.</strong> Dapatkan video
+              level pro menggunakan Dolby Vision 4K pada kecepatan 60 fps dan
+              hingga 4K pada kecepatan 120 fps pada model Pro terbaru. Gunakan
+              mode Aksi untuk menstabilkan pengambilan adegan.
+            </p>
+
+            <div class="mockup-phone horizontal">
+              <img src="../img/video_image.jpg" alt="Cinematic Video" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL OVERLAY UNTUK CHIP -->
+    <div id="modal-chip" class="modal-overlay">
+      <div class="modal-content">
+        <!-- Tombol Close (X) -->
+        <button class="close-btn" id="close-chip">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-body">
+          <span class="modal-subtitle">Chip A17 Pro</span>
+          <h2 class="modal-title">Kemenangan besar<br />untuk gaming.</h2>
+
+          <!-- Bagian 1: Teks Kiri, HP Gaming Kanan -->
+          <div class="modal-split">
+            <div class="modal-text-block">
+              <h3>Performa grafis tingkat lanjut.</h3>
+              <p>
+                Chip X1 menghadirkan desain ulang GPU terbesar dalam sejarah
+                VPhone. GPU sekelas pro memberikan lingkungan bermain game yang
+                luar biasa detail. Nikmati rendering grafis yang super mulus
+                dengan Ray Tracing yang diakselerasi perangkat keras, membuat
+                cahaya dan pantulan air di dalam game terlihat sangat realistis.
+              </p>
+            </div>
+            <div class="modal-img-wrapper">
+              <div
+                class="mockup-phone horizontal"
+                style="width: 400px; max-width: 100%"
+              >
+                <img src="../img/game_image.png" alt="Mobile Gaming" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Bagian 2: Teks Lebar & Grid 3 Foto (Fokus AI & Neural Engine) -->
+          <div class="modal-full">
+            <p class="large-desc">
+              <strong>Kecerdasan buatan luar biasa.</strong> VPhone kini
+              didukung oleh Neural Engine 16-core generasi baru yang beroperasi
+              2x lebih cepat. Sistem ini mampu menjalankan triliunan operasi per
+              detik untuk mempercepat segalanya, mulai dari pemrosesan foto mode
+              malam hingga prediksi teks cerdas, semuanya diproses aman di dalam
+              perangkat.
+            </p>
+
+            <div class="photo-grid-3">
+              <!-- Gambar ilustrasi AI, Data, dan Kecepatan -->
+              <img
+                src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?auto=format&fit=crop&w=500&q=80"
+                alt="AI Core"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=500&q=80"
+                alt="Cyber Security"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1635070041078-e363dbe005cb?auto=format&fit=crop&w=500&q=80"
+                alt="Data Flow"
+              />
+            </div>
+          </div>
+
+          <!-- Bagian 3: Teks Lebar & Gambar Silikon Super Lebar -->
+          <div class="modal-full">
+            <p class="large-desc">
+              <strong>Pelopor arsitektur 3 nanometer.</strong> Prosesor pertama
+              di industri smartphone dengan fabrikasi 3nm, menempatkan 19 miliar
+              transistor di ruang yang bahkan lebih kecil dari sel darah merah.
+              Hasilnya? Peningkatan performa drastis dengan konsumsi daya yang
+              jauh lebih irit.
+            </p>
+
+            <!-- Gambar Hero Lebar (Abstrak Teknologi Silikon) -->
+            <div
+              style="
+                border-radius: 30px;
+                overflow: hidden;
+                background: #000;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1517420879524-86d64ac2f339?auto=format&fit=crop&w=1000&q=80"
+                alt="3nm Technology"
+                style="width: 100%; height: auto; display: block; opacity: 0.8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL OVERLAY UNTUK OS / LAYAR -->
+    <div id="modal-os" class="modal-overlay">
+      <div class="modal-content">
+        <!-- Tombol Close (X) -->
+        <button class="close-btn" id="close-os">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-body">
+          <span class="modal-subtitle">OS Cerdas</span>
+          <h2 class="modal-title">Sangat personal.<br />Sangat Anda.</h2>
+
+          <!-- Bagian 1: Teks Kiri, HP Kustomisasi Kanan -->
+          <div class="modal-split">
+            <div class="modal-text-block">
+              <h3>Kustomisasi tanpa batas.</h3>
+              <p>
+                Jadikan Layar Terkunci VPhone Anda lebih hidup dan fungsional.
+                Sesuaikan ketebalan font, terapkan filter foto berlapis, dan
+                tambahkan widget interaktif untuk memantau cuaca, cincin
+                aktivitas, atau jadwal harian Anda secara sekilas. Semua yang
+                penting, kini ada di ujung jari tanpa perlu membuka kunci.
+              </p>
+            </div>
+            <div class="modal-img-wrapper">
+              <div class="mockup-phone vertical">
+                <!-- Gambar UI Layar HP -->
+                <img
+                  src="https://images.unsplash.com/photo-1551817958-20204d6ab212?auto=format&fit=crop&w=500&q=80"
+                  alt="UI Customization"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Bagian 2: Teks Lebar & Grid 3 Foto (Fokus Ekosistem & Privasi) -->
+          <div class="modal-full">
+            <p class="large-desc">
+              <strong>Lebih pintar dan lebih aman.</strong> OS terbaru dirancang
+              untuk memahami rutinitas Anda melalui Machine Learning lokal yang
+              menjaga data tetap di dalam perangkat. Bagikan file secara instan,
+              salin teks dari gambar, dan rasakan ketenangan pikiran dengan
+              fitur Privasi dan Keamanan yang tertanam di setiap baris kode.
+            </p>
+
+            <div class="photo-grid-3">
+              <!-- Gambar Widget, Ekosistem, dan Privasi -->
+              <img src="../img/icons.png" alt="App Icons & Widgets" />
+              <img
+                src="https://images.unsplash.com/photo-1512314889357-e157c22f938d?auto=format&fit=crop&w=500&q=80"
+                alt="Seamless Ecosystem"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?auto=format&fit=crop&w=500&q=80"
+                alt="Privacy & Security"
+              />
+            </div>
+          </div>
+
+          <!-- Bagian 3: Teks Lebar & Gambar Abstrak Layar Mulus (ProMotion) -->
+          <div class="modal-full">
+            <p class="large-desc">
+              <strong>Super Retina 120Hz. Mulus luar biasa.</strong> OS cerdas
+              ini dipadukan dengan layar yang memiliki refresh rate adaptif
+              hingga 120Hz. Mulai dari sekadar scrolling timeline hingga animasi
+              transisi aplikasi, semuanya merespons sentuhan Anda dengan
+              kecepatan dan kehalusan yang belum pernah Anda rasakan sebelumnya.
+            </p>
+
+            <!-- Gambar Hero Lebar (Abstrak Fluiditas/Layar Mulus) -->
+            <div
+              style="
+                border-radius: 30px;
+                overflow: hidden;
+                background: #000;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1000&q=80"
+                alt="120Hz Fluid Display"
+                style="width: 100%; height: auto; display: block; opacity: 0.9"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL OVERLAY UNTUK BATERAI -->
+    <div id="modal-battery" class="modal-overlay">
+      <div class="modal-content">
+        <!-- Tombol Close (X) -->
+        <button class="close-btn" id="close-battery">
+          <svg
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+            stroke="currentColor"
+            stroke-width="2"
+            fill="none"
+          >
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+
+        <div class="modal-body">
+          <span class="modal-subtitle">Baterai Awet</span>
+          <h2 class="modal-title">Terus menyala.<br />Sepanjang hari.</h2>
+
+          <!-- Bagian 1: Teks Kiri, HP Indikator Baterai Kanan -->
+          <div class="modal-split">
+            <div class="modal-text-block">
+              <h3>Daya ekstra untuk segalanya.</h3>
+              <p>
+                Meskipun memiliki layar yang lebih terang dan segudang fitur
+                canggih baru, VPhone tetap memberikan kekuatan baterai sepanjang
+                hari. Dapatkan hingga 29 jam pemutaran video berkat manajemen
+                daya cerdas dan efisiensi luar biasa dari chipset terbaru. Anda
+                bisa melakukan lebih banyak hal, tanpa perlu terus melirik
+                persentase baterai.
+              </p>
+            </div>
+            <div class="modal-img-wrapper">
+              <div class="mockup-phone vertical">
+                <!-- Gambar HP nuansa gelap/baterai -->
+                <img
+                  src="https://images.unsplash.com/photo-1601972599720-36938d4ecd31?auto=format&fit=crop&w=500&q=80"
+                  alt="Battery Lifestyle"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Bagian 2: Teks Lebar & Grid 3 Foto (Fokus Fast Charging & Wireless) -->
+          <div class="modal-full">
+            <p class="large-desc">
+              <strong>Isi daya dalam sekejap. Tanpa ribet.</strong> Saat
+              waktunya mengisi ulang, port USB-C universal mendukung pengisian
+              daya super cepat—mengisi hingga 50% hanya dalam waktu 30 menit.
+              Atau, cukup tempelkan pengisi daya nirkabel magnetik untuk
+              pengisian daya yang mulus, aman, dan tanpa kabel berantakan.
+            </p>
+
+            <div class="photo-grid-3">
+              <!-- Gambar Wireless Charging, Kabel USB-C, dan Power Management -->
+              <img src="../img/wireless_charge.png" alt="Wireless Charging" />
+              <img
+                src="https://images.unsplash.com/photo-1583863788434-e58a36330cf0?auto=format&fit=crop&w=500&q=80"
+                alt="Fast Charging Cable"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&w=500&q=80"
+                alt="Smart Power"
+              />
+            </div>
+          </div>
+
+          <!-- Bagian 3: Teks Lebar & Gambar Abstrak (Ramah Lingkungan / Efisiensi Hijau) -->
+          <div class="modal-full">
+            <p class="large-desc">
+              <strong>Bertenaga. Sekaligus bertanggung jawab.</strong> Dirancang
+              dengan mempertimbangkan bumi, baterai VPhone kini menggunakan 100%
+              kobalt daur ulang. Ini adalah langkah maju yang besar menuju
+              tujuan kami untuk membuat produk yang netral karbon pada akhir
+              dekade ini.
+            </p>
+
+            <!-- Gambar Hero Lebar (Abstrak Alam/Energi Hijau) -->
+            <div
+              style="
+                border-radius: 30px;
+                overflow: hidden;
+                background: #000;
+                box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+              "
+            >
+              <img
+                src="https://images.unsplash.com/photo-1534447677768-be436bb09401?auto=format&fit=crop&w=1000&q=80"
+                alt="Green Energy Efficiency"
+                style="width: 100%; height: auto; display: block; opacity: 0.8"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ESSENTIALS / AKSESORI SECTION -->
+    <section class="essentials reveal">
+      <div class="essentials-header">
+        <h2>Yang penting untuk VPhone.</h2>
+      </div>
+
+      <div class="essentials-grid">
+        <!-- Card 1: Aksesori / Casing -->
+        <div class="essential-card">
+          <div class="essential-text">
+            <h3>Aksesori VPhone</h3>
+            <p>
+              Hubungkan VPhone dengan berbagai macam aksesoris baru berkualitas
+              tinggi untuk mendukung aktivitas sehari-hari anda
+            </p>
+            <a href="../products/indexproducts.html" class="shop-link"
+              >Belanja aksesori &gt;</a
+            >
+          </div>
+          <!-- Gambar Casing HP (Silicone Cases) -->
+          <img src="../img/aksesoris_image.png" alt="Aksesori VPhone" />
+        </div>
+
+        <!-- Card 2: VTag (Smart Tracker) -->
+        <div class="essential-card">
+          <div class="essential-text">
+            <!-- <span class="badge-new">Baru</span> -->
+            <h3>VTag</h3>
+            <p>
+              Kini dengan speaker yang 50% lebih lantang dan rentang Pencarian
+              Tepat hingga 1,5x lebih luas, semakin mudah untuk melacak hal
+              penting.
+            </p>
+            <a href="#" class="shop-link">Beli &gt;</a>
+          </div>
+          <!-- Gambar Smart Tracker / AirTag -->
+          <img src="../img/vtag_image.png" alt="VTag Tracker" />
+        </div>
+      </div>
+    </section>
+
+    <footer class="mega-footer">
+      <div class="footer-container">
+        <!-- Logo / Title -->
+        <div class="footer-breadcrumb">
+          <span>VPhone.</span>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <!-- Link Columns (Grid) -->
+        <div class="footer-links-grid">
+          <div class="footer-col">
+            <h4>Belanja dan Belajar</h4>
+            <a href="#">MacBook Pro</a>
+            <a href="#">VPad</a>
+            <a href="#">VPhone 17 Pro</a>
+            <a href="#">VWatch</a>
+            <a href="#">VBuds</a>
+            <a href="#">Aksesori</a>
+            <a href="#">VTag</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Akun</h4>
+            <a href="#">Kelola Akun VPhone</a>
+            <a href="#">VCloud.com</a>
+
+            <h4>Hiburan</h4>
+            <a href="#">VPhone One</a>
+            <a href="#">VTV+</a>
+            <a href="#">VMusic</a>
+            <a href="#">VArcade</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Untuk Bisnis</h4>
+            <a href="#">VPhone dan Bisnis</a>
+
+            <h4>Untuk Pendidikan</h4>
+            <a href="#">VPhone dan Pendidikan</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Nilai-nilai VPhone</h4>
+            <a href="#">Aksesibilitas</a>
+            <a href="#">Pendidikan</a>
+            <a href="#">Lingkungan</a>
+            <a href="#">Privasi</a>
+            <a href="#">Inovasi Rantai Pasok</a>
+
+            <h4>Tentang VPhone</h4>
+            <a href="#">Newsroom</a>
+            <a href="#">Kepemimpinan</a>
+            <a href="#">Investor</a>
+            <a href="#">Etika & Kepatuhan</a>
+            <a href="#">Hubungi Kami</a>
+          </div>
+        </div>
+
+        <!-- Retailer Section -->
+        <div class="footer-retailer">
+          <p><a href="#">Temukan retailer</a> di dekat Anda.</p>
+        </div>
+
+        <hr class="footer-divider" />
+
+        <!-- Bottom Legal Bar -->
+        <div class="footer-bottom">
+          <div style="display: flex; flex-direction: column; gap: 5px">
+            <p class="copyright">© 2026 Julius Portfolio.</p>
+            <p style="font-size: 0.75rem; color: #6e6e73; max-width: 600px">
+              Penafian: Website ini adalah proyek portofolio fiktif untuk tujuan
+              edukasi dan demonstrasi desain UI/UX. Tidak ada afiliasi dengan
+              merek teknologi sungguhan mana pun. Gambar disediakan oleh
+              Unsplash.
+            </p>
+          </div>
+
+          <div class="footer-legal">
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Ketentuan Penggunaan</a>
+            <a href="#">Legal</a>
+            <a href="#">Peta Situs</a>
+          </div>
+          <p class="country">Indonesia</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../hero/scripthero1.js"></script>
+  </body>
+</html>

@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VPhone | Login</title>
+    <link rel="stylesheet" href="../hero/stylehero1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">VPhone.</div>
+      <nav id="navMenu">
+        <a href="../hero/indexhero1.html">Home</a>
+        <a href="../products/indexproducts.html">Products</a>
+        <a href="../about/indexabout.html">About</a>
+        <a
+          href="#"
+          class="nav-btn"
+          style="
+            background: transparent;
+            border: 1px solid #fff;
+            color: #fff !important;
+          "
+          >Buy Now</a
+        >
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <main class="login-page">
+      <div class="login-box fade-in">
+        <div class="login-header">
+          <h2>Masuk ke VPhone ID.</h2>
+          <p>Kelola perangkat, akses VCloud, dan belanja dengan lebih cepat.</p>
+        </div>
+
+        <div
+          id="login-error"
+          style="
+            color: #ff453a;
+            background: rgba(255, 69, 58, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 0.9rem;
+          "
+        ></div>
+
+        <form id="loginForm" class="login-form">
+          <div class="input-group">
+            <input
+              type="email"
+              id="email"
+              placeholder="Email atau VPhone ID"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <input
+              type="password"
+              id="password"
+              placeholder="Kata Sandi"
+              required
+            />
+          </div>
+
+          <div class="form-options">
+            <label class="remember-me">
+              <input type="checkbox" /> Ingat saya
+            </label>
+            <a href="#" class="forgot-link">Lupa kata sandi?</a>
+          </div>
+
+          <button type="submit" class="btn primary login-btn">Masuk</button>
+        </form>
+
+        <div class="login-footer">
+          <p>
+            Belum punya VPhone ID?
+            <a href="../login/register.html">Buat milik Anda sekarang.</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <footer class="mega-footer">
+      <div class="footer-container">
+        <div class="footer-breadcrumb">
+          <span>VPhone.</span>
+        </div>
+        <hr class="footer-divider" />
+        <div class="footer-bottom">
+          <div style="display: flex; flex-direction: column; gap: 5px">
+            <p class="copyright">© 2026 Julius Portfolio.</p>
+            <p style="font-size: 0.75rem; color: #6e6e73; max-width: 600px">
+              Penafian: Website ini adalah proyek portofolio fiktif untuk tujuan
+              edukasi dan demonstrasi desain UI/UX. Tidak ada afiliasi dengan
+              merek teknologi sungguhan mana pun. Gambar disediakan oleh
+              Unsplash.
+            </p>
+          </div>
+
+          <div class="footer-legal">
+            <a href="#">Kebijakan Privasi</a>
+            <a href="#">Ketentuan Penggunaan</a>
+            <a href="#">Legal</a>
+            <a href="#">Peta Situs</a>
+          </div>
+          <p class="country">Indonesia</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../hero/scripthero1.js"></script>
+  </body>
+</html>

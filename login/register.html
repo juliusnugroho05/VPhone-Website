@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VPhone | Buat VPhone ID</title>
+    <link rel="stylesheet" href="../hero/stylehero1.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">VPhone.</div>
+      <nav id="navMenu">
+        <a href="../hero/indexhero1.html">Home</a>
+        <a href="../products/indexproducts.html">Products</a>
+        <a href="../about/indexabout.html">About</a>
+        <a href="../login/login.html">Login</a>
+      </nav>
+      <div class="menu-toggle" id="menuToggle">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </header>
+
+    <main class="login-page">
+      <div class="login-box fade-in" style="max-width: 550px">
+        <div class="login-header">
+          <h2>Buat VPhone ID Anda.</h2>
+          <p>Satu akun untuk semua layanan VPhone.</p>
+        </div>
+
+        <div
+          id="error-message"
+          style="
+            color: #ff453a;
+            background: rgba(255, 69, 58, 0.1);
+            padding: 10px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            display: none;
+            font-size: 0.9rem;
+          "
+        ></div>
+
+        <form id="registerForm" class="login-form">
+          <div style="display: flex; gap: 15px">
+            <div class="input-group" style="flex: 1">
+              <input
+                type="text"
+                id="firstName"
+                placeholder="Nama Depan"
+                required
+              />
+            </div>
+            <div class="input-group" style="flex: 1">
+              <input
+                type="text"
+                id="lastName"
+                placeholder="Nama Belakang"
+                required
+              />
+            </div>
+          </div>
+
+          <div class="input-group">
+            <input
+              type="email"
+              id="regEmail"
+              placeholder="Email (harus .com)"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <label
+              style="
+                display: block;
+                text-align: left;
+                color: #86868b;
+                font-size: 0.8rem;
+                margin-bottom: 5px;
+                margin-left: 10px;
+              "
+              >Tanggal Lahir</label
+            >
+            <input type="date" id="dob" required />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="regPassword"
+              placeholder="Kata Sandi"
+              required
+            />
+          </div>
+
+          <div class="input-group">
+            <input
+              type="password"
+              id="confirmPassword"
+              placeholder="Konfirmasi Kata Sandi"
+              required
+            />
+          </div>
+
+          <button type="submit" class="btn primary login-btn">Lanjutkan</button>
+        </form>
+
+        <div class="login-footer">
+          <p>
+            Sudah punya VPhone ID?
+            <a href="../login/login.html">Masuk sekarang.</a>
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="../hero/scripthero1.js"></script>
+  </body>
+</html>
