@@ -1,6 +1,6 @@
 # VPhone - Premium E-Commerce Portfolio
 
-**Live Demo:** [Klik di sini untuk melihat website](https://juliusnugroho05.github.io/vphone-portfolio/)
+**Live Demo:** [Klik di sini untuk melihat website](https://juliusnugroho05.github.io/VPhone-Website/)
 
 VPhone adalah proyek pengembangan front-end yang dirancang dengan standar UI/UX tinggi untuk mensimulasikan pengalaman belanja perangkat teknologi papan atas. Proyek ini dibangun sepenuhnya menggunakan **Vanilla HTML, CSS, dan JavaScript**, tanpa mengandalkan *framework* eksternal, guna mendemonstrasikan keahlian dalam manipulasi DOM, arsitektur desain modern, serta efisiensi kode *client-side*.
 
