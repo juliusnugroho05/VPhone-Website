@@ -3,7 +3,7 @@
   --secondary-bg: #111111;
   --text-main: #ffffff;
   --text-muted: #a1a1a6;
-  --accent: #2997ff; /* Warna biru elegan */
+  --accent: #2997ff;
   --accent-hover: #147ce5;
 }
 
@@ -24,7 +24,6 @@ body {
   overflow-x: hidden;
 }
 
-/* NAVBAR - Glassmorphism */
 .navbar {
   position: fixed;
   top: 0;
@@ -137,24 +136,23 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90vw; /* Lebar cahaya menyebar 50% layar */
+  width: 90vw;
   height: 50vw;
-  background: rgba(41, 151, 255, 0.1); /* Warna biru transparan */
-  filter: blur(150px); /* Efek blur ekstrem biar jadi gradasi */
-  z-index: -1; /* Taruh di paling belakang */
+  background: rgba(41, 151, 255, 0.1);
+  filter: blur(150px);
+  z-index: -1;
   border-radius: 50%;
 }
 
-/* 2. Tarik posisi badge makin jauh ke area kosong */
 .badge-left {
   top: 25%;
-  left: -250px; /* Tarik lebih jauh ke kiri (sebelumnya -120px) */
+  left: -250px;
   animation-delay: 1s;
 }
 
 .badge-right {
   bottom: 25%;
-  right: -250px; /* Tarik lebih jauh ke kanan (sebelumnya -120px) */
+  right: -250px;
   animation-delay: 2s;
 }
 
@@ -207,7 +205,7 @@ body {
   border-color: var(--text-main);
 }
 
-/* BENTO SECTION (APPLE STYLE) */
+/* BENTO SECTION */
 .bento-section {
   padding: 100px 0 100px 5%;
   background-color: var(--secondary-bg);
@@ -217,7 +215,7 @@ body {
 .bento-section .section-header {
   margin-bottom: 40px;
   padding-right: 5%;
-  text-align: left; /* Biar judulnya rata kiri ala Apple */
+  text-align: left;
 }
 
 .bento-section .section-header h2 {
@@ -225,7 +223,6 @@ body {
   margin-bottom: 10px;
 }
 
-/* Rahasia Horizontal Scrolling yang Mulus */
 .bento-scroll-wrapper {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -244,7 +241,7 @@ body {
   width: max-content;
 }
 
-/* Styling Kartu */
+/* Styling Card */
 .bento-card {
   position: relative;
   width: 340px;
@@ -262,7 +259,7 @@ body {
   transform: scale(0.98);
 }
 
-/* Teks di dalam kartu */
+/* Teks di dalam card */
 .bento-text {
   position: absolute;
   top: 0;
@@ -287,7 +284,7 @@ body {
   color: #ffffff;
 }
 
-/* Gambar di dalam kartu */
+/* Gambar di dalam card */
 .bento-card img {
   position: absolute;
   bottom: 0;
@@ -303,7 +300,7 @@ body {
   transform: scale(1.05);
 }
 
-/* Modifikasi untuk kartu khusus performa (Background full hitam) */
+/* Modifikasi untuk card khusus performa */
 .dark-card {
   background: #000000;
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -313,9 +310,7 @@ body {
   object-fit: contain;
 }
 
-/* =========================================
-   MEGA FOOTER SECTION 
-   ========================================= */
+/* MEGA FOOTER SECTION */
 .mega-footer {
   background-color: var(--primary-bg);
   color: var(--text-muted);
@@ -347,10 +342,7 @@ body {
 /* Sistem Grid untuk Kolom */
 .footer-links-grid {
   display: grid;
-  grid-template-columns: repeat(
-    4,
-    1fr
-  ); /* Memaksa 4 kolom sejajar di desktop */
+  grid-template-columns: repeat(4, 1fr);
   gap: 30px;
   margin-bottom: 40px;
 }
@@ -362,7 +354,6 @@ body {
   margin-bottom: 12px;
 }
 
-/* Jarak ekstra jika ada 2 judul dalam 1 kolom */
 .footer-col h4:not(:first-child) {
   margin-top: 25px;
 }
@@ -390,7 +381,7 @@ body {
 }
 
 .footer-retailer a {
-  color: var(--accent); /* Warna biru */
+  color: var(--accent);
   text-decoration: none;
 }
 
@@ -398,7 +389,7 @@ body {
   text-decoration: underline;
 }
 
-/* Bagian Bawah (Copyright & Legal) */
+/* Footer */
 .footer-bottom {
   display: flex;
   flex-wrap: wrap;
@@ -494,7 +485,7 @@ body {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
   text-align: left;
   animation: floatBadge 4s ease-in-out infinite alternate;
-  z-index: 10; /* Tambahkan baris ini biar badge selalu di depan */
+  z-index: 10;
 }
 
 .floating-badge h4 {
@@ -512,16 +503,15 @@ body {
   font-size: 24px;
 }
 
-/* Posisi Badge ditarik keluar dari gambar */
 .badge-left {
   top: 20%;
-  left: -120px; /* Tarik ke area kosong kiri */
+  left: -120px;
   animation-delay: 1s;
 }
 
 .badge-right {
   bottom: 20%;
-  right: -120px; /* Tarik ke area kosong kanan */
+  right: -120px;
   animation-delay: 2s;
 }
 
@@ -534,7 +524,7 @@ body {
   }
 }
 
-/* Sembunyikan badge kalau di layar HP biar gak sempit */
+/* Sembunyikan badge kalau di layar HP */
 @media (max-width: 768px) {
   .floating-badge {
     display: none;
@@ -568,7 +558,7 @@ body {
 
 /* MODAL OVERLAY (Latar Belakang Blur) */
 .modal-overlay {
-  display: none; /* Disembunyikan dulu pakai CSS */
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -588,10 +578,9 @@ body {
   opacity: 1;
 }
 
-/* KONTEN MODAL (Warna Terang ala Apple) */
 .modal-content {
-  background: #f5f5f7; /* Off-white khas Apple */
-  color: #1d1d1f; /* Dark gray khas teks Apple */
+  background: #f5f5f7;
+  color: #1d1d1f;
   width: 90%;
   max-width: 900px;
   margin: 5% auto;
@@ -671,7 +660,7 @@ body {
 .mockup-phone {
   background: #000;
   border-radius: 40px;
-  padding: 10px; /* Bezel hitam */
+  padding: 10px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
 }
 .mockup-phone.vertical {
@@ -689,7 +678,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 30px; /* Layar melengkung */
+  border-radius: 30px;
 }
 
 /* LAYOUT GRID FOTO */
@@ -719,14 +708,10 @@ body {
   object-fit: cover;
 }
 
-/* =========================================
-   ESSENTIALS / AKSESORI SECTION 
-   ========================================= */
+/* ESSENTIALS / AKSESORI SECTION */
 .essentials {
   padding: 100px 5%;
-  background-color: var(
-    --primary-bg
-  ); /* Hitam, nyambung dengan background utama */
+  background-color: var(--primary-bg);
   text-align: center;
 }
 
@@ -739,10 +724,7 @@ body {
 
 .essentials-grid {
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(400px, 1fr)
-  ); /* Responsif otomatis */
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 30px;
   max-width: 1100px;
   margin: 0 auto;
@@ -752,7 +734,7 @@ body {
 .essential-card {
   background-color: #1c1c1e;
   border-radius: 30px;
-  padding: 60px 40px 40px; /* Atas 60, Kiri-Kanan 40, Bawah 40 (jarak bawah gambar) */
+  padding: 60px 40px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -761,7 +743,7 @@ body {
 }
 
 .essential-card:hover {
-  transform: scale(0.98); /* Efek membal saat kursor diarahkan */
+  transform: scale(0.98);
 }
 
 /* Teks dalam Kartu */
@@ -791,17 +773,9 @@ body {
   flex-grow: 1;
 }
 
-/* Badge Tulisan "Baru" warna oranye */
-.badge-new {
-  color: #bf4800; /* Oranye khas Apple */
-  font-size: 0.9rem;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
 /* Link Belanja Biru */
 .shop-link {
-  color: var(--accent); /* Menggunakan variabel biru dari CSS-mu */
+  color: var(--accent);
   text-decoration: none;
   font-weight: 500;
   font-size: 1.1rem;
@@ -819,19 +793,15 @@ body {
   width: 100%;
   max-width: 450px;
   margin-top: auto;
-  object-fit: contain; /* Memastikan gambar tampil penuh 100%, tidak ada yang terpotong */
-  border-radius: 20px; /* Membuat sudut gambar membulat (tidak siku) */
-
-  /* Gradasi halus/memudar hanya di pinggiran gambar */
+  object-fit: contain;
+  border-radius: 20px;
   -webkit-mask-image: radial-gradient(ellipse, black 85%, transparent 100%);
   mask-image: radial-gradient(ellipse, black 85%, transparent 100%);
 }
 
-/* =========================================
-   PRODUCT PAGE SECTION 
-   ========================================= */
+/* PRODUCT PAGE SECTION  */
 .products-showcase {
-  padding: 150px 5% 100px; /* Padding atas besar agar tidak tertutup Navbar Glassmorphism */
+  padding: 150px 5% 100px;
   background-color: var(--primary-bg);
   text-align: center;
   min-height: 100vh;
@@ -841,6 +811,10 @@ body {
   color: var(--text-muted);
   font-size: 1.2rem;
   margin-bottom: 60px;
+}
+
+.products-showcase .section-header h2 {
+  margin-bottom: 10px;
 }
 
 .product-grid {
@@ -855,7 +829,7 @@ body {
 .product-card {
   background: #1c1c1e;
   border-radius: 30px;
-  padding: 0 0 40px 0; /* Hapus padding atas & samping biar gambar mentok ke tepi */
+  padding: 0 0 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -863,7 +837,7 @@ body {
     transform 0.4s ease,
     border-color 0.4s ease;
   border: 1px solid rgba(255, 255, 255, 0.05);
-  overflow: hidden; /* Rahasia biar gambar pas melengkung mengikuti sudut kartu */
+  overflow: hidden;
 }
 
 .product-card:hover {
@@ -875,21 +849,19 @@ body {
 .product-card img {
   width: 100%;
   max-width: 100%;
-  height: 350px; /* Tinggi gambar dibuat seragam */
-  object-fit: cover; /* Biar gambar proporsional memenuhi area atas tanpa gepeng */
+  height: 350px;
+  object-fit: cover;
   margin-bottom: 30px;
-  filter: none; /* Hapus drop-shadow lama karena kita pakai foto penuh */
+  filter: none;
   transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .product-card:hover img {
-  transform: scale(
-    1.08
-  ); /* Efek zoom estetik nan mewah saat kursor diarahkan */
+  transform: scale(1.08);
 }
 
 .product-info {
-  padding: 0 30px; /* Kembalikan padding khusus untuk area teks di bawah */
+  padding: 0 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -912,7 +884,7 @@ body {
   cursor: pointer;
   position: relative;
   transition: transform 0.2s ease;
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Border tipis agar warna terang kelihatan */
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .color-dot:hover {
@@ -927,7 +899,7 @@ body {
   left: -4px;
   right: -4px;
   bottom: -4px;
-  border: 1.5px solid var(--accent); /* Warna biru accent kita */
+  border: 1.5px solid var(--accent);
   border-radius: 50%;
 }
 
@@ -943,7 +915,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 25px;
-  flex-grow: 1; /* Mendorong harga dan tombol ke bawah sejajar */
+  flex-grow: 1;
 }
 
 .product-info .price {
@@ -953,11 +925,9 @@ body {
   color: var(--text-main);
 }
 
-/* =========================================
-   ABOUT PAGE SECTION 
-   ========================================= */
+/* ABOUT PAGE SECTION  */
 .about-page {
-  padding-top: 150px; /* Jarak ekstra dari navbar glassmorphism */
+  padding-top: 150px;
   background-color: var(--primary-bg);
   min-height: 100vh;
   display: flex;
@@ -1000,7 +970,6 @@ body {
   align-items: center;
 }
 
-/* Kotak untuk gambar lebar */
 .about-image-wrapper {
   width: 100%;
   border-radius: 30px;
@@ -1011,7 +980,7 @@ body {
 
 .about-image-wrapper img {
   width: 100%;
-  height: 60vh; /* Membuat gambarnya tinggi tapi tidak memenuhi seluruh layar */
+  height: 60vh;
   object-fit: cover;
   display: block;
 }
@@ -1040,9 +1009,7 @@ body {
   font-weight: 600;
 }
 
-/* =========================================
-   LOGIN PAGE SECTION 
-   ========================================= */
+/* LOGIN PAGE SECTION  */
 .login-page {
   min-height: 100vh;
   display: flex;
@@ -1104,10 +1071,9 @@ body {
   outline: none;
   border-color: var(--accent);
   background: rgba(255, 255, 255, 0.08);
-  box-shadow: 0 0 0 4px rgba(41, 151, 255, 0.15); /* Efek glow biru Apple */
+  box-shadow: 0 0 0 4px rgba(41, 151, 255, 0.15);
 }
 
-/* Mengubah warna placeholder agar terlihat elegan */
 .input-group input::placeholder {
   color: #6e6e73;
 }
@@ -1159,41 +1125,61 @@ body {
 
 /* Styling khusus untuk input tanggal agar warnanya putih */
 input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(1); /* Membuat ikon kalender jadi putih di dark mode */
+  filter: invert(1);
   cursor: pointer;
 }
 
 input[type="date"] {
-  color-scheme: dark; /* Memaksa tampilan kalender browser jadi dark mode */
+  color-scheme: dark;
 }
 
 /* RESPONSIVE UNTUK HP (MAX-WIDTH: 768PX) */
 @media (max-width: 768px) {
-  /* -- Nav & Hero -- */
   .hero h1 {
     font-size: 3rem;
   }
 
   #navMenu {
-    position: absolute;
-    top: 60px;
-    left: 0;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.95);
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(1, 1, 1, 0.95);
+    backdrop-filter: blur(15px);
+    display: flex;
     flex-direction: column;
-    padding: 20px 0;
-    clip-path: circle(0% at 100% 0);
-    transition: clip-path 0.4s ease-out;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: 0.4s ease-in-out;
+    z-index: 999;
+    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   #navMenu.active {
-    clip-path: circle(150% at 100% 0);
+    right: 0;
   }
 
   #navMenu a {
-    margin: 15px 0;
-    font-size: 18px;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .nav-btn {
+    margin-top: 10px;
+    width: 80%;
     text-align: center;
+  }
+
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .menu-toggle {
